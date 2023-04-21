@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 2
+
+   Author: Ethan Jay
+   Date:   03/30/2023
+   
+   Filename: code3-2_layout.css
+
+*/
+
+header {
+padding: 10px;
+outline: 3px dashed grey;
+grid-column: 1 / -1;
+}
+
+footer {
+   padding: 10px;
+   outline: 3px dashed grey;
+   grid-column: span 2;
+}
+
+aside {
+   padding: 10px;
+   outline: 3px dashed grey;
+}
+
+article {
+   padding: 10px;
+   outline: 3px dashed grey;
+}
+
+a {
+   padding: 10px;
+   outline: 3px dashed grey;
+}
+
+body {
+   width: 90%;
+	max-width: 1024px;
+	min-width: 640px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: 50px 30px 1fr 1fr 100px;
+   grid-gap: 15px;
+}
+
+article#intro {
+   grid-row: span 2;
+   grid-column: span 2;
+}
+
+article#main {
+  grid-row: span 2;
+  grid-column: span 3;
+}
